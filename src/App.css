@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: #fafafa;
+}
+.app__header {
+  position: sticky;
+  top:0;
+  background-color: white;
+  /* margin-left: 10px; */
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__posts{
+  padding: 20px;
+  display:flex;
+  justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.app__right{
+  width: 50%;
+}
+
+.app__message {
+  font-size:xx-large; 
+  font-weight: bolder;
+  color:blueviolet;
+  margin-left: 200px;
+  margin-top: 20px;
+  align-self:center;
+  
+}
+
+.image2 {
+  margin: top 50%;;
+  
+}
+.app__headerImage {
+  object-fit: contain;
+}
+.app__signup {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__loginContainer {
+  object-fit: contain;
+  justify-content: space-between;
+  margin-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__image {
+  color: rebeccapurple;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 10px;
 }
