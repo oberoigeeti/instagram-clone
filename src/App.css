@@ -3,12 +3,12 @@
 }
 
 .app {
-  background-color: #fafafa;
+  background-color: #242B2E;
 }
 .app__header {
   position: sticky;
   top:0;
-  background-color: white;
+  background-color: #0D0D0D;
   /* margin-left: 10px; */
   padding: 20px;
   border-bottom: 1px solid lightgray;
@@ -19,19 +19,17 @@
 
 .app__posts{
   padding: 20px;
+  margin-left: 30%;
   display:flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 
-.app__right{
-  width: 50%;
-}
-
 .app__message {
   font-size:xx-large; 
   font-weight: bolder;
-  color:blueviolet;
+  color:black;
   margin-left: 200px;
   margin-top: 20px;
   align-self:center;
@@ -43,6 +41,7 @@
   
 }
 .app__headerImage {
+  max-width: 200px;
   object-fit: contain;
 }
 .app__signup {
@@ -51,13 +50,14 @@
 }
 
 .app__loginContainer {
+  color: white;
   object-fit: contain;
   justify-content: space-between;
   margin-right: 5px;
 }
 
 .app__image {
-  color: rebeccapurple;
+  color: #242B2E;
   font-weight: bold;
   padding: 20px;
   margin-top: 10px;

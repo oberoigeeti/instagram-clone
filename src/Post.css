@@ -1,9 +1,11 @@
 
 .post {
-    background-color: white;
+    color: white;
+    background-color: #0D0D0D;
     max-width: 500px;
     border: 1px solid lightgray;
     margin-bottom: 40px;
+    
 }
 
 .post__image {
@@ -25,6 +27,7 @@
 }
 
 .post__avatar{
+    object-fit: contain;
     margin-right: 10px;
 }
 
@@ -34,6 +37,8 @@
 }
 
 .post__input{
+    color: white;
+    background-color: #0D0D0D;
     flex: 1;
     border:none;
     padding: 10px;
@@ -41,10 +46,10 @@
 }
 
 .post__button{
+    background-color: #0D0D0D;
     flex: 0;
-    border:none;
-    color: rgb(0, 162, 255);
-    background-color: transparent;
+    border: 1px solid lightgray;
+    color: white;
     border-top:1px solid lightgray;
 
 }

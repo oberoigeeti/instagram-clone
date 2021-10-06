@@ -1,4 +1,5 @@
 .image__upload {
+    color: white;
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -8,6 +9,12 @@
     margin-bottom: 10px;
 }
 
-.image__progress{
+.image__progress {
+    margin-bottom: 10px;
     width: 100%;
+    background-color: none;
+}
+
+.button {
+    margin-top: 10px;
 }

@@ -145,50 +145,29 @@ function App() {
       <div className = "app__header">
         <img 
           className= "app__headerImage"
-          src = "https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"
+          src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtPCwXCwFuJhFciPRaEHZy-bsnrnZrXImsLvaJvD9nsHYDzOhXaWu3CnQqyqOXLp4H2Uw&usqp=CAU"
           alt =""
           />
            {
         user ? (
-          <Button onClick= {()=> auth.signOut()}>Logout</Button>
+          <div className="app__loginContainer">
+          <button onClick= {()=> auth.signOut()}>Logout</button></div>
         ): (
         <div className = "app__loginContainer">
-        <Button  type = "submit" onClick={()=> setOpenSignIn(true)}>Sign In</Button>
-        <Button  type="submit" onClick={()=> setOpen(true)}>Sign Up</Button>
+        <button  type = "submit" onClick={()=> setOpenSignIn(true)}>Sign In</button>
+        <button  type="submit" onClick={()=> setOpen(true)}>Sign Up</button>
         </div>
         )}
         </div>
 
        
        <div className="app__posts">
-         <div className="app__left">
+        
          {
           posts.map(({id,post}) => (
             <Post key = {id} postId={id} user={user} username = {post.username} caption={post.caption} imgUrl = {post.imageUrl} />
           ))
-        }
-         </div>
-        
-
-        <div className="app__right">
-          <h1 className="app__message">Just how I like it</h1>
-        <img className="image2" src="https://upbeatagency.com/wp-content/uploads/2018/07/Screen-Shot-2018-07-19-at-10.31.07.png" />
-        </div>
-        
-        {/* <InstagramEmbed
-            url='https://instagr.am/p/Zw9o4/'
-            maxWidth={320}
-            hideCaption={false}
-            containerTagName='div'
-            protocol=''
-            injectScript
-            onLoading={() => {}}
-            onSuccess={() => {}}
-            onAfterRender={() => {}}
-            onFailure={() => {}}
-          /> */}
-        
-        
+        }  
         </div> 
       
       
@@ -196,7 +175,7 @@ function App() {
        {user?.displayName ? (
        <ImageUpload username={user.displayName} />
          ):(
-           <h3>You need to login to upload</h3>
+           <h2><strong>You need to login to upload</strong></h2>
          )}
          </div>
 

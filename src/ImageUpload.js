@@ -60,9 +60,9 @@ function ImageUpload({username}) {
     return (
         <div className = 'image__upload'>
             <progress className="image__progress" value = {progress} max = "100" />
-            <Input type = "text" placeholder="Enter a caption" value={caption} onChange= {e => setCaption(e.target.value)} />
-            <Input type = "file" onChange= {handleChange} />
-            <Button variant = "contained" onClick={handleUpload}>Upload</Button>
+            <input type = "text" placeholder="Enter a caption" value={caption} onChange= {e => setCaption(e.target.value)} />
+            <input type = "file" onChange= {handleChange} />
+            <button className ="button" classvariant = "contained" onClick={handleUpload}>Upload</button>
         </div>
     )
 }
